@@ -1,0 +1,57 @@
+# Fluxo de Trabalho Git para Equipes
+
+## 1. Clonar o Repositório
+Clonar o repositório para ter uma cópia local.
+```bash
+git clone https://github.com/usuario/nome-do-repositorio.git
+
+## 2. Criar uma Nova Branch
+Criar e mudar para uma nova branch.
+git checkout -b nome-da-branch ou  git branch nome
+
+## 3. Fazer Mudanças e Commitar
+Adicionar mudanças ao índice e criar um commit.
+git add .
+git commit -m "mensagem do commit"
+
+## 4. Enviar Mudanças para o Repositório Remoto
+Enviar a nova branch para o repositório remoto.
+git push origin nome-da-branch
+
+## 5. Verificar Branches Disponíveis
+Listar todas as branches (locais e remotas).
+git branch -a
+
+## 6. Mudar para Outra Branch
+Mudar para uma branch existente.
+git checkout nome-da-branch
+
+## 7. Atualizar Branch Local com Mudanças Remotas
+Trazer as últimas mudanças da branch remota.
+git pull origin nome-da-branch
+
+## 8. Mesclar Branches
+Mesclar uma branch na branch atual.
+git merge nome-da-branch
+
+## 9. Resolver Conflitos de Mesclagem
+Editar arquivos com conflitos, adicionar e commitá-los.
+git add .
+git commit -m "resolvendo conflitos"
+
+
+## 10. Deletar uma Branch
+Deletar uma branch local após a mesclagem.
+git branch -d nome-da-branch
+### Deletar uma branch remota.
+git push origin --delete nome-da-branch
+
+## 11. Renomear uma Branch
+Renomear a branch atual.
+git branch -m novo-nome-da-branch
+
+
+## 12. Reverter um Commit
+Desfazer o último commit mantendo as mudanças no diretório de trabalho.
+git reset --soft HEAD~1
+
